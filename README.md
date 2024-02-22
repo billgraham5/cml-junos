@@ -37,11 +37,11 @@ Based on the Junos 23.2R1-S1 XML example, the following parameters are required:
   <ns0:arg value="type=1,manufacturer=Bochs,product=Bochs,serial=chassis_no=0:slot=0:type=1:assembly_id=0x0D20:platform=251:master=0:channelized=no"/>
 </ns0:commandline>
 ```
-- Type 0 refers to bios arguments
-- Type 1 refers to system arguments
-- Type 3 refers to chassis arguments
+- Type 0 refers to bios values
+- Type 1 refers to system values
+- Type 3 refers to chassis values
 
-This translates to the following indiviual SMBIOS parameters:
+This translates to the following individual SMBIOS parameters:
 
 ```
 bios.vendor = Bochs
