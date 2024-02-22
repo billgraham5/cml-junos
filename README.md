@@ -51,3 +51,14 @@ system.manufacturer
 system.product = Bochs
 system.serial = chassis_no=0:slot=0:type=1:assembly_id=0x0D20:platform=251:master=0:channelized=no
 ```
+### CML Node Definition Details
+
+todo - include web UI screen caps that reflect SMBIOS configuration and use of cpu_model
+
+### CML Disk Image Definition Details
+
+todo
+
+### Automation
+
+todo:  detail the use of the Junos config.qcow2 image for the default configuration and other CML specific automation functions that would help bring up this router for automated test scenarios.
