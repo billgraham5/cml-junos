@@ -20,12 +20,12 @@ The difference between this Junos virtual router and many other VNFs that operat
 - Junos expects specific SMBIOS parameters to be passed from the hypervisor to the base Linux operating system for the product to boot properly.  Upon boot, the Junos base operating system will run a shell script that checks for various parameters before starting its services and management CLI.  One of these parameters is an assembly ID that will be null (0x0000) by default, if the SMBIOS arguments are not defined correctly.  In this case, the router will boot to an error message stating the platform is unsupported.  SMBIOS arguments will require explicit configuration within CML.
 
 - The release notes detail certain minimum CPU requirements for the product to operate correctly.  Not meeting these requirements may prevent the product from booting or properly forwarding traffic:
-  - While the release notes call for Intel Ivy Bridge or later processors, this example was successfully tested using an older Sandy Bridge processor.  You may need to explicitly identify your CPU (cat /proc/cpuinfo) and define the cpu_model in CML, as was the case with a Westmere host that was tested.
-  - The Intel vmx CPU flag is required for proper operation and must be presented to the virtual machine.  This may require explicit configuration within CML, based on how the CPU model is defined.
+  - While the release notes call for Intel Ivy Bridge or later processors, this example was successfully tested using an older Sandy Bridge processor.  You may need to explicitly identify your CPU (```cat /proc/cpuinfo```) and define the ```cpu_model``` in CML, as was the case with a Westmere host that was tested.
+  - The Intel ```vmx``` CPU flag is required for proper operation and must be presented to the virtual machine.  This may require explicit configuration within CML, based on how the CPU model is defined.
 
 ### SMBIOS Parameters
 
-Based on the Junos 23.2R1-S1 XML example, the following parameters are required:
+Based on the Junos 23.2R1-S1 XML example, the required SMBIOS arguments are:
 
 ```
 <ns0:commandline>
