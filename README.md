@@ -9,7 +9,7 @@ This node definition is intended for the Juniper Networks product referred to as
 
 Currently, the images can be downloaded here:  https://www.juniper.net/us/en/dm/vjunos-labs.html.
 
-This image is a virtualized variant of the PTX router / MPLS switch control plane and forwarding engine.  
+This image is a virtualized variant of the PTX router / MPLS switch control plane and packet forwarding engine.  
 
 ## Technical Details
 
