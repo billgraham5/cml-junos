@@ -11,6 +11,8 @@ Currently, the images can be downloaded here:  https://www.juniper.net/us/en/dm/
 
 This image is a virtualized variant of the PTX router / MPLS switch control plane and packet forwarding engine.  
 
+NOTE:  Cisco Modeling Labs 2.7 or later is required.
+
 ## Technical Details
 
 Juniper Networks provides a KVM (libvirt) QCOW2 virtual disk image and domain XML configuration example for the definition of the virtual machine.  These instructions are based on Junos version 23.2R1-S1.  Please refer to the latest XML configuration example when creating your CML node definition.
