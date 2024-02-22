@@ -3,7 +3,7 @@
 ## Scope
 This node defintion is intended for the freely available Juniper Networks product referred to as "vJunos Evolved for Labs".  While there are several virtual editions of different Junos-based products, this CML node defintion is intended to work with only one variant:
 
-- Linux-only variant of the base Junos operating system (not FreeBSD based builds or products without the "Evolved" designation)
+- Linux-only variant of the base Junos operating system (not FreeBSD-based builds or products without the "Evolved" designation)
 - Single virtual machine form factor (some prior editions were dual virtual machine -- one for the Routing Engine [RE] and one for the Packet Forwarding Engine [PFE])
 - No nested virtualization (VM inside of a VM, as is the case with some variants)  
 
@@ -23,5 +23,38 @@ The difference between this Junos virtual router and many other VNFs that operat
   - While the release notes call for Intel Ivy Bridge or later processors, this example was successfully tested using an older Sandy Bridge processor.  You may need to explictly identify your CPU (cat /proc/cpuinfo) and define the cpu_model in CML, as was the case with a Westmere host that was tested.
   - The Intel vmx CPU flag is required for proper operation and must be presented to the virtual machine.  This may require explict configuration within CML, based on how the CPU model is defined.
 
+### SMBIOS Parameters
+
+Based on the Junos 23.2R1-S1 XML example, the following parameters are required:
+
+```
+<ns0:commandline>
+  <ns0:arg value="-smbios"/>
+  <ns0:arg value="type=0,vendor=Bochs,version=Bochs"/>
+  <ns0:arg value="-smbios"/>
+  <ns0:arg value="type=3,manufacturer=Bochs"/>
+  <ns0:arg value="-smbios"/>
+  <ns0:arg value="type=1,manufacturer=Bochs,product=Bochs,serial=chassis_no=0:slot=0:type=1:assembly_id=0x0D20:platform=251:master=0:channelized=no"/>
+</ns0:commandline>
+```
+- Type 0 refers to bios arguments 
+- Type 1 refers to system arguments
+- Type 3 refers to chassis arguments
+
+This translates to the following indiviual SMBIOS parameters:
+
+```
+bios.vendor = Bochs
+bios.version = Bochs
+chassis.manufacturer = Bochs
+system.manufacturer 
+system.product = Bochs
+system.serial = chassis_no=0:slot=0:type=1:assembly_id=0x0D20:platform=251:master=0:channelized=no
+```
+
+
+
+Block 3
+manufacturer=Bochs
 
 
