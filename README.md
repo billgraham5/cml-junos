@@ -1,7 +1,7 @@
 # Virtual PTX Evolved on Cisco Modeling Labs
 
 ## Scope
-This node definition is intended for the Juniper Networks product referred to as "vJunos Evolved for Labs".  While there are several virtual editions of Junos-based products, this CML node definition is intended to work with this variant:
+This node definition is intended for the Juniper Networks product referred to as "vJunos Evolved for Labs".  While there are several virtual editions of Junos-based products and names that have changed over time, this CML node definition is intended to work with variants with these characteristics:
 
 - Linux-only edition of the base Junos operating system (not for FreeBSD-based builds or products without the "Evolved" designation)
 - Single virtual machine form factor (some editions are dual virtual machine -- one for the Routing Engine [RE] and one for the Packet Forwarding Engine [PFE])
