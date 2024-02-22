@@ -19,7 +19,7 @@ The difference between this virtual Junos router and many other VNFs that operat
 
 - Junos expects specific SMBIOS parameters to be passed from the hypervisor to the base Linux operating system for the product to boot properly.  Upon boot, the Junos base operating system will run a shell script that checks for certain parameters before starting its services and management CLI.  One of these parameters is an assembly ID that will be null (0x0000) by default, if the SMBIOS arguments are not defined correctly.  In this case, the router will boot to an error message stating the platform is unsupported.  
 
-- The release notes detail certain minimum CPU requirements for the product to operate correctly.  Ignoring these requirements may prevent the product from booting or properly forwarding traffic:
+- The release notes detail certain minimum CPU requirements for the product to operate correctly.  Failing to meet these requirements may prevent the product from booting or properly forwarding traffic:
   - While the release notes call for Intel Ivy Bridge or later processors, this node definition was successfully tested using an older Sandy Bridge processor.  
   - You may need to explicitly identify your CPU (from the Junos Linux shell:  ```cat /proc/cpuinfo```) and define the ```cpu_model``` in CML, as was the case with a Westmere host that was tested.
   - The Intel ```vmx``` CPU flag is required for proper operation and must be presented to the virtual machine.  This may or may not require explicit configuration within CML, based on a number of hardware-specific factors.  Examining the output of ```cat /proc/cpuinfo``` from the Junos Linux shell will reveal which CPU flags are passed from the hypervisor.  
