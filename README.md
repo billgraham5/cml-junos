@@ -13,7 +13,7 @@ This image is a virtualized variant of the PTX router / MPLS switch control plan
 
 ## Technical Details
 
-Juniper Networks provides a KVM (libvirt) QCOW2 virtual disk image and Domain XML configuration example for the definition of the virtual machine.  These instructions are based on Junos version 23.2R1-S1.  Please refer to the latest XML configuration example when creating your CML node definition.
+Juniper Networks provides a KVM (libvirt) QCOW2 virtual disk image and domain XML configuration example for the definition of the virtual machine.  These instructions are based on Junos version 23.2R1-S1.  Please refer to the latest XML configuration example when creating your CML node definition.
 
 The difference between this Junos virtual router and many other VNFs that operate as-is under CML are:
 
