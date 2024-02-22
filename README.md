@@ -1,4 +1,4 @@
-# Virtual PTX Evolved on Cisco Modeling Labs
+# Virtual PTX (Junos Evolved) on Cisco Modeling Labs
 
 ## Scope
 This node definition is intended for the Juniper Networks product referred to as "vJunos Evolved for Labs".  While there are several virtual editions of Junos-based products and names that have changed over time, this CML node definition is intended to work with variants with these characteristics:
