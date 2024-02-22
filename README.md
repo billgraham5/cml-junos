@@ -15,7 +15,7 @@ This image is a virtualized variant of the PTX router / MPLS switch control plan
 
 Juniper Networks provides a KVM (libvirt) QCOW2 virtual disk image and domain XML configuration example for the definition of the virtual machine.  These instructions are based on Junos version 23.2R1-S1.  Please refer to the latest XML configuration example when creating your CML node definition.
 
-The difference between this Junos virtual router and many other VNFs that operate as-is under CML are:
+The difference between this virtual Junos router and many other VNFs that operate as-is under CML are:
 
 - Junos expects specific SMBIOS parameters to be passed from the hypervisor to the base Linux operating system for the product to boot properly.  Upon boot, the Junos base operating system will run a shell script that checks for certain parameters before starting its services and management CLI.  One of these parameters is an assembly ID that will be null (0x0000) by default, if the SMBIOS arguments are not defined correctly.  In this case, the router will boot to an error message stating the platform is unsupported.  
 
