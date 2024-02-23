@@ -64,4 +64,4 @@ todo
 
 ### Automation
 
-todo:  detail the use of the Junos config.qcow2 image for the default configuration and other CML specific automation functions that would help bring up this router for automated test scenarios.
+todo:  detail the use of the Junos config.qcow2 image for the default configuration and other CML specific automation functions that would help bring up this router for automated test scenarios.  Need to test CML capturing the JunOS router configuration and storing it as metadata within CML for certain automated tasks.
