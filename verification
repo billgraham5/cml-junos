@@ -1,0 +1,54 @@
+root@re0> show interfaces terse | match et-    
+et-0/0/0                up    up
+et-0/0/0.16386          up    up   multiservice
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/2                up    up
+et-0/0/2.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/4                up    up
+et-0/0/4.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/6                up    up
+et-0/0/6.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/8                up    up
+et-0/0/8.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/10               up    up
+et-0/0/10.16386         up    up   multiservice
+et-0/0/11               up    up
+                                        
+
+
+root@re0> show chassis hardware | no-more 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN7180450AJD      JNP10001-36MR [PTX10001-36MR]
+Routing Engine 0          BUILTIN      BUILTIN           RE-JNP10001-36MR
+CB 0                      BUILTIN      BUILTIN           Control Board
+FPC 0                     BUILTIN      BUILTIN           FPC-JNP10001-36MR
+  PIC 0                   BUILTIN      BUILTIN           8X400GE-MR + 4X100GE-MR
+    Xcvr 0       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 1       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 2       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 3       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 4       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 5       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 6       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 7       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 8       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 9       REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 10      REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+    Xcvr 11      REV 01   740-058732   1DJQA042004       QSFP-100GBASE-LR4
+SIB 0                     BUILTIN      BUILTIN           SIB-JNP10001-36MR
+Fan Tray 0                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
+Fan Tray 1                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
+Fan Tray 2                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
+Fan Tray 3                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
+Fan Tray 4                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
+Fan Tray 5                                               JNP10001 Fan Tray, Front to Back Airflow - AFO
