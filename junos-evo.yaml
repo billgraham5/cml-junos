@@ -1,0 +1,8 @@
+id: junos-evo
+node_definition_id: PTX
+description: ''
+label: junos-evo
+disk_image: vJunosEvolved-23.2R1-S1.8-EVO.qcow2
+read_only: false
+disk_subfolder: junos-evo
+schema_version: 0.0.1
